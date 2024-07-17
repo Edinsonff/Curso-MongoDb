@@ -1,0 +1,10 @@
+use("sample_training")
+
+db.zips.find({city: "MANCHESTER"})
+db.zips.updateMany(
+  {city: "MANCHESTER"},
+  {
+    $inc: {
+      pop: 1000
+    }
+  })

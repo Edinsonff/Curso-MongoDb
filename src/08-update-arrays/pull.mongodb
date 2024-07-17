@@ -1,0 +1,19 @@
+use("platzi_store");
+
+// db.inventory.updateMany({}, {
+//   //pull removes all elements that match the query only in arrays
+//   $pull: {
+//     tags: "book"
+//   }
+// });
+
+
+db.inventory.updateMany({}, {
+  //pull removes all elements that match the query only in arrays
+  $pull: {
+    tags: {
+      $in: ["appliance", "school"]
+    }
+  }
+}
+)

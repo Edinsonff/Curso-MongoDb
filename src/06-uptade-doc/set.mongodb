@@ -1,0 +1,13 @@
+use("platzi_store")
+
+db.productos.updateOne(
+  //query
+  {_id:1},
+  //change => operatos
+  {
+    $set: {
+      name: 'nombre',
+      price: 1000,
+      tags: ['tecnologia', 'laptop']
+    }
+  })

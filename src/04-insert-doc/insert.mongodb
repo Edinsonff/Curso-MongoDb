@@ -1,0 +1,14 @@
+use("platzi_store")
+
+db.productos.insertOne({
+  _id: 1,
+  name: "Smartphone",
+  description: "El mejor smartphone del mercado",
+  price: 200,
+})
+db.productos.insertOne({
+  _id: 2,
+  name: "Tablet",
+  description: "La mejor tablet del mercado",
+  price: 600,
+})

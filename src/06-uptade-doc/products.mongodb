@@ -1,0 +1,40 @@
+use("platzi_store")
+
+//Drop erase all the documents in the collection
+db.productos.drop()
+
+//Insert many documents
+db.productos.insertMany([
+  {
+    _id: 1,
+    name: "Smartphone",
+    description: "El mejor smartphone del mercado",
+    price: 200,
+  },
+  {
+    _id: 2,
+    name: "Tablet",
+    description: "La mejor tablet del mercado",
+    price: 600,
+  },
+  {
+    _id: 3,
+    name: "Laptop",
+    description: "La mejor laptop del mercado",
+    price: 1200,
+  },
+  {
+    _id: 4,
+    name: "Reloj",
+    description: "La reloj laptop del mercado",
+    price: 1800,
+  },
+  {
+    name: "Audifonos",
+    description: "Los mejores audifonos del mercado",
+    price: 300,
+
+  }
+])
+
+d4.productos.find()
